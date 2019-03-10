@@ -1,0 +1,22 @@
+{
+  "name": "js-playground",
+  "version": "0.1.0",
+  "description": "Javascript playground",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx serve -s src",
+    "start:ts": "npx tsc --outDir ts/build ts/index.ts; npx serve -s ts",
+    "watch:ts": "npx tsc --watch --outDir ts/build ts/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "playground"
+  ],
+  "author": "Seokjun Kim <colus001@me.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^10.1.2",
+    "typescript": "^3.3.3333"
+  }
+}
